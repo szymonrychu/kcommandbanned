@@ -1,0 +1,638 @@
+{
+ "card": "Kozilek's Command",
+ "printing": "MH3 #11 (nonfoil)",
+ "scryfall_id": "92585587-cfdc-406a-9114-4f6dd8802c37",
+ "note": "usd=TCGplayer market, eur=Cardmarket, tix=Cardhoarder (same sources Scryfall shows). Rows before the first scryfall row are backfilled from MTGJSON AllPrices (90-day window).",
+ "history": [
+  {
+   "date": "2026-08-11",
+   "usd": 7.18,
+   "eur": 7.54,
+   "tix": 14.81,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-08-12",
+   "usd": 6.99,
+   "eur": 7.36,
+   "tix": 11.93,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-08-13",
+   "usd": 6.94,
+   "eur": 7.37,
+   "tix": 11.93,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-08-14",
+   "usd": 7.04,
+   "eur": 7.39,
+   "tix": 10.64,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-08-15",
+   "usd": 6.95,
+   "eur": 7.39,
+   "tix": 10.9,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-08-16",
+   "usd": 7.2,
+   "eur": 7.22,
+   "tix": 11.47,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-08-17",
+   "usd": 7.77,
+   "eur": 7.22,
+   "tix": 10.5,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-08-18",
+   "usd": 8.07,
+   "eur": 7.21,
+   "tix": 14.01,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-08-19",
+   "usd": 8.13,
+   "eur": 7.13,
+   "tix": 13.16,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-08-20",
+   "usd": 7.65,
+   "eur": 7.25,
+   "tix": 13.34,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-08-21",
+   "usd": 7.61,
+   "eur": 7.19,
+   "tix": 12.47,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-08-22",
+   "usd": 7.75,
+   "eur": 7.15,
+   "tix": 14.01,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-08-23",
+   "usd": 7.83,
+   "eur": 7.0,
+   "tix": 13.08,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-08-24",
+   "usd": 8.04,
+   "eur": 7.01,
+   "tix": 13.06,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-08-25",
+   "usd": 8.44,
+   "eur": 7.12,
+   "tix": 12.71,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-08-26",
+   "usd": 8.93,
+   "eur": 7.09,
+   "tix": 14.01,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-08-27",
+   "usd": 8.94,
+   "eur": 7.28,
+   "tix": 13.81,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-08-28",
+   "usd": 8.4,
+   "eur": 7.42,
+   "tix": 14.01,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-08-30",
+   "usd": 7.66,
+   "eur": 7.31,
+   "tix": 20.3,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-08-31",
+   "usd": 7.91,
+   "eur": null,
+   "tix": 18.75,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-09-01",
+   "usd": 8.14,
+   "eur": null,
+   "tix": 14.0,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-09-02",
+   "usd": 8.1,
+   "eur": null,
+   "tix": 15.76,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-09-03",
+   "usd": 7.8,
+   "eur": 7.19,
+   "tix": 22.98,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-09-04",
+   "usd": 7.78,
+   "eur": 7.21,
+   "tix": 18.54,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-09-05",
+   "usd": 7.87,
+   "eur": 7.23,
+   "tix": 15.95,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-09-06",
+   "usd": 7.99,
+   "eur": 7.24,
+   "tix": 14.72,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-09-07",
+   "usd": 7.88,
+   "eur": 7.37,
+   "tix": 13.09,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-09-08",
+   "usd": 7.77,
+   "eur": 7.37,
+   "tix": 12.6,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-09-09",
+   "usd": 7.67,
+   "eur": 7.5,
+   "tix": 11.25,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-09-10",
+   "usd": 7.71,
+   "eur": 7.45,
+   "tix": 12.47,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-09-11",
+   "usd": 7.71,
+   "eur": 7.25,
+   "tix": 12.56,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-09-12",
+   "usd": 7.97,
+   "eur": 7.25,
+   "tix": 12.45,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-09-13",
+   "usd": 7.99,
+   "eur": 7.25,
+   "tix": 15.38,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-09-14",
+   "usd": 7.71,
+   "eur": 7.27,
+   "tix": 16.98,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-09-15",
+   "usd": 7.55,
+   "eur": 7.16,
+   "tix": 16.76,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-09-16",
+   "usd": 7.61,
+   "eur": 7.15,
+   "tix": 12.98,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-09-17",
+   "usd": 7.61,
+   "eur": 7.22,
+   "tix": 12.94,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-09-18",
+   "usd": 7.41,
+   "eur": 7.28,
+   "tix": 9.76,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-09-19",
+   "usd": 7.47,
+   "eur": 7.36,
+   "tix": 10.1,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-09-20",
+   "usd": 7.59,
+   "eur": 7.59,
+   "tix": 8.57,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-09-21",
+   "usd": 7.51,
+   "eur": 7.29,
+   "tix": 9.54,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-09-22",
+   "usd": 7.48,
+   "eur": 7.29,
+   "tix": 11.22,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-09-23",
+   "usd": 7.55,
+   "eur": 7.29,
+   "tix": 17.81,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-09-24",
+   "usd": 7.63,
+   "eur": 7.42,
+   "tix": 18.71,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-09-25",
+   "usd": 7.46,
+   "eur": 7.46,
+   "tix": 16.46,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-09-26",
+   "usd": 7.57,
+   "eur": 7.59,
+   "tix": 12.47,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-09-27",
+   "usd": 7.6,
+   "eur": 7.78,
+   "tix": 12.63,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-09-28",
+   "usd": 7.83,
+   "eur": 7.8,
+   "tix": 11.23,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-09-29",
+   "usd": 7.7,
+   "eur": 7.8,
+   "tix": 10.41,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-09-30",
+   "usd": 7.77,
+   "eur": 7.8,
+   "tix": 10.06,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-10-01",
+   "usd": 7.81,
+   "eur": 7.87,
+   "tix": 9.97,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-10-02",
+   "usd": 7.96,
+   "eur": 8.08,
+   "tix": 11.17,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-10-03",
+   "usd": 8.03,
+   "eur": 8.0,
+   "tix": 10.35,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-10-04",
+   "usd": 7.9,
+   "eur": 8.02,
+   "tix": 11.14,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-10-05",
+   "usd": 7.59,
+   "eur": 8.02,
+   "tix": 10.75,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-10-06",
+   "usd": 7.51,
+   "eur": 7.81,
+   "tix": 9.67,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-10-07",
+   "usd": 8.1,
+   "eur": 7.75,
+   "tix": 8.78,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-10-08",
+   "usd": 8.36,
+   "eur": 7.7,
+   "tix": 9.3,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-10-09",
+   "usd": 8.35,
+   "eur": 7.81,
+   "tix": 8.78,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-10-10",
+   "usd": 8.24,
+   "eur": 7.71,
+   "tix": 10.25,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-10-11",
+   "usd": 8.11,
+   "eur": 7.64,
+   "tix": 9.2,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-10-12",
+   "usd": 8.14,
+   "eur": 7.83,
+   "tix": 9.44,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-10-13",
+   "usd": 8.07,
+   "eur": 7.83,
+   "tix": 9.95,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-10-15",
+   "usd": 7.91,
+   "eur": 7.56,
+   "tix": 9.02,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-10-16",
+   "usd": 8.39,
+   "eur": 7.34,
+   "tix": 9.8,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-10-17",
+   "usd": 8.91,
+   "eur": 7.24,
+   "tix": 8.87,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-10-18",
+   "usd": 8.64,
+   "eur": 7.07,
+   "tix": 8.87,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-10-19",
+   "usd": 8.86,
+   "eur": 7.07,
+   "tix": 8.87,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-10-20",
+   "usd": 8.68,
+   "eur": 7.04,
+   "tix": 9.28,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-10-21",
+   "usd": 8.39,
+   "eur": 6.97,
+   "tix": 10.0,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-10-22",
+   "usd": 8.28,
+   "eur": 6.83,
+   "tix": 9.17,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-10-23",
+   "usd": 7.55,
+   "eur": 6.83,
+   "tix": 9.8,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-10-24",
+   "usd": 7.25,
+   "eur": 7.13,
+   "tix": 9.21,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-10-25",
+   "usd": 7.4,
+   "eur": 7.06,
+   "tix": 9.04,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-10-26",
+   "usd": 6.99,
+   "eur": 6.99,
+   "tix": 7.23,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-10-27",
+   "usd": 7.14,
+   "eur": 6.91,
+   "tix": 7.06,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-10-28",
+   "usd": 7.22,
+   "eur": 7.0,
+   "tix": 7.06,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-10-29",
+   "usd": 7.36,
+   "eur": 6.99,
+   "tix": 8.63,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-10-30",
+   "usd": 7.3,
+   "eur": 7.02,
+   "tix": 8.63,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-10-31",
+   "usd": 6.97,
+   "eur": 7.0,
+   "tix": 10.28,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-11-01",
+   "usd": 6.73,
+   "eur": 7.05,
+   "tix": 12.02,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-11-02",
+   "usd": 7.07,
+   "eur": 7.04,
+   "tix": 11.2,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-11-03",
+   "usd": 7.09,
+   "eur": 7.05,
+   "tix": 10.59,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-11-04",
+   "usd": 7.17,
+   "eur": 6.95,
+   "tix": 10.59,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-11-05",
+   "usd": 7.33,
+   "eur": 6.87,
+   "tix": 11.34,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-11-06",
+   "usd": 7.46,
+   "eur": 6.96,
+   "tix": 9.51,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-11-07",
+   "usd": 7.58,
+   "eur": 6.91,
+   "tix": 10.24,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-11-08",
+   "usd": 7.68,
+   "eur": 6.91,
+   "tix": 10.24,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-11-09",
+   "usd": 7.33,
+   "eur": 6.97,
+   "tix": 10.24,
+   "source": "mtgjson-backfill"
+  },
+  {
+   "date": "2026-11-10",
+   "usd": 7.26,
+   "eur": 6.97,
+   "tix": 10.24,
+   "source": "scryfall"
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Is Kozilek's Command banned yet?</title>
+<style>
+  :root { --bg:#fafaf7; --fg:#1d1d1b; --muted:#6b6b66; --line:#ddd9cf; --card:#fff; --accent:#7a3cc2; --usd:#2f6fb0; --eur:#c2703c; --tix:#3c9a5f; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#151514; --fg:#ecebe6; --muted:#9b9a93; --line:#333230; --card:#1f1f1d; --accent:#b48ef0; --usd:#6ea8e6; --eur:#e6a06e; --tix:#6ec98f; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.5 system-ui, sans-serif; }
+  main { max-width:960px; margin:0 auto; padding:24px 16px 48px; }
+  h1 { font-size:1.6rem; margin:0 0 4px; }
+  h2 { font-size:1.15rem; margin:32px 0 8px; }
+  .muted { color:var(--muted); font-size:.9rem; }
+  .top { display:grid; grid-template-columns:minmax(0,300px) minmax(0,1fr); gap:24px; margin-top:16px; }
+  @media (max-width:640px) { .top { grid-template-columns:1fr; } }
+  .top img { width:100%; border-radius:4.75% / 3.5%; display:block; }
+  .box { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:16px; }
+  .pct { font-size:3.2rem; font-weight:700; color:var(--accent); line-height:1; }
+  .est { margin-bottom:16px; }
+  .est .fmt { font-weight:600; }
+  svg { width:100%; height:auto; display:block; }
+  .legend span { margin-right:16px; font-size:.9rem; }
+  .legend i { display:inline-block; width:12px; height:3px; vertical-align:middle; margin-right:6px; }
+  ul.src { list-style:none; padding:0; margin:0; }
+  ul.src li { padding:10px 0; border-bottom:1px solid var(--line); }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Is Kozilek's Command getting banned?</h1>
+  <div class="muted" id="updated"></div>
+
+  <div class="top">
+    <a id="cardlink"><img id="cardimg" alt="Kozilek's Command"></a>
+    <div class="box">
+      <div class="muted" id="announce"></div>
+      <div id="estimates" style="margin-top:12px"></div>
+      <p id="summary"></p>
+    </div>
+  </div>
+
+  <h2>Price history</h2>
+  <div class="box">
+    <div class="legend"><span><i style="background:var(--usd)"></i>USD (TCGplayer)</span><span><i style="background:var(--eur)"></i>EUR (Cardmarket)</span><span><i style="background:var(--tix)"></i>MTGO tix</span></div>
+    <svg id="chart" viewBox="0 0 900 300" role="img" aria-label="Price history chart"></svg>
+    <div class="muted" id="pricenote"></div>
+  </div>
+
+  <h2>What the % is based on</h2>
+  <ul class="src" id="sources"></ul>
+  <p class="muted">Crude estimate by an AI agent, updated daily. Not affiliated with Wizards of the Coast or Scryfall. Card image and prices via Scryfall.</p>
+</main>
+<script>
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const bust = "?t=" + Date.now();
+
+fetch("data.json" + bust).then(r => r.json()).then(d => {
+  $("updated").textContent = "Research updated " + d.updated + (d.deployed_at ? " - deployed " + d.deployed_at : "");
+  $("cardimg").src = d.card.image;
+  $("cardlink").href = d.card.scryfall_uri;
+  const a = d.announcement;
+  $("announce").innerHTML = "Next Banned &amp; Restricted announcement: <b>" + esc(a.date) + "</b> " + esc(a.note || "") +
+    " (<a href=\"" + esc(a.source_url) + "\">source</a>)";
+  $("estimates").innerHTML = d.estimates.map(e =>
+    "<div class=\"est\"><div class=\"pct\">" + esc(e.percent) + "%</div><div class=\"fmt\">" + esc(e.format) + "</div><div class=\"muted\">" + esc(e.why) + "</div></div>").join("");
+  $("summary").textContent = d.summary;
+  $("sources").innerHTML = d.sources.map(s =>
+    "<li><a href=\"" + esc(s.url) + "\">" + esc(s.title) + "</a> <span class=\"muted\">- " + esc(s.source) + ", " + esc(s.date) + "</span><br>" + esc(s.takeaway) + "</li>").join("");
+});
+
+fetch("prices.json" + bust).then(r => r.json()).then(p => {
+  const h = p.history, W = 900, H = 300, L = 44, R = 12, T = 12, B = 28;
+  const series = [["usd","--usd"],["eur","--eur"],["tix","--tix"]];
+  const vals = h.flatMap(r => series.map(([k]) => r[k])).filter(v => v != null);
+  const max = Math.ceil(Math.max(...vals) * 1.1), min = 0;
+  const x = i => L + (W - L - R) * (h.length > 1 ? i / (h.length - 1) : 0.5);
+  const y = v => T + (H - T - B) * (1 - (v - min) / (max - min));
+  let s = "";
+  for (let k = 0; k <= 4; k++) {
+    const v = min + (max - min) * k / 4;
+    s += `<line x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${L-6}" y="${y(v)+4}" text-anchor="end" font-size="11" fill="var(--muted)">${v.toFixed(0)}</text>`;
+  }
+  const step = Math.max(1, Math.floor(h.length / 6));
+  h.forEach((r, i) => { if (i % step === 0 || i === h.length - 1) s += `<text x="${x(i)}" y="${H-8}" text-anchor="middle" font-size="11" fill="var(--muted)">${r.date.slice(5)}</text>`; });
+  for (const [k, c] of series) {
+    let d = "", pen = false;
+    h.forEach((r, i) => { if (r[k] == null) { pen = false; return; } d += (pen ? "L" : "M") + x(i).toFixed(1) + " " + y(r[k]).toFixed(1); pen = true; });
+    s += `<path d="${d}" fill="none" stroke="var(${c})" stroke-width="2"/>`;
+  }
+  $("chart").innerHTML = s;
+  const last = h[h.length - 1];
+  $("pricenote").textContent = `${h[0].date} to ${last.date}: now $${last.usd} / EUR ${last.eur} / ${last.tix} tix. ` + p.note;
+});
+</script>
+</body>
+</html>
