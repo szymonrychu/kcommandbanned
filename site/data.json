@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10",
+ "updated": "2026-11-11",
  "announcement": {
   "date": "2026-11-30",
   "note": "(Monday; WotC said so in the Oct 12, 2026 announcement)",
@@ -8,8 +8,8 @@
  "estimates": [
   {
    "format": "Modern",
-   "percent": 17,
-   "why": "P(act) ~55%: WotC's Oct 12 'very likely ... very hard look at the Eldrazi package' (~60%), +10 for the Eldrazi family still at ~20% on MTGGoldfish (Eldrazi Ramp #1 at 11.6%), -15 for organic correction (Spellslinger: Broodscale share down ~19% to ~15% over 30 days, effective archetypes up 19 to 32; Broodscale won none of the last three RCs). x P(Command picked) ~30%: Emrakul, the Promised End or Blade of the Bloodchief are the narrower enablers and the consensus pick; the Command is a flexible 4-of in 20% of all Modern decks, which WotC avoids hitting."
+   "percent": 18,
+   "why": "P(act) ~58%: WotC's Oct 12 'very likely ... very hard look at the Eldrazi package' (~60%), +10 for the Eldrazi family at ~20% on MTGGoldfish (Eldrazi Ramp #1 at 11.9%) and Broodscale still converting (3 of the Nov 10 Challenge top 8 incl. the win, 2 of 8 at German Nationals; Spellslinger rates Broodscale Bloodchief S-tier for top-8 conversion), -12 for organic correction (Spellslinger: mono-green Broodscale share down from 10.7% to 6.4%, effective archetypes steady near 32; Broodscale won none of the last three RCs). Goldfish and Spellslinger disagree on the trend, so this is not averaged. x P(Command picked) ~30%: Emrakul, the Promised End or Blade of the Bloodchief are the narrower enablers and the consensus pick; the Command is a flexible 4-of in 20% of all Modern decks, which WotC avoids hitting."
   },
   {
    "format": "Legacy",
@@ -22,21 +22,49 @@
    "why": "Not a Vintage restriction candidate; in Commander it is in 0.78% of EDHREC decks and not on the Game Changers list (Scryfall: 53 Game Changers, Command not among them)."
   }
  ],
- "summary": "WotC's Oct 12 update warned it is 'very likely that we take a very hard look at the Eldrazi package' if Eldrazi keeps sitting on top, and named Kozilek's Command as a bridge to Emrakul in Broodscale Combo. Since then the deck is still the most played (Eldrazi Ramp 11.6% on MTGGoldfish, Broodscale Bloodchief 13% on MTGTop8) but its share is falling and it won none of the last three Regional Championships, so a Nov 30 hit is about a coin flip. If WotC acts, Emrakul or Blade of the Bloodchief is the likelier pick; the Command is a real but secondary target.",
+ "summary": "WotC's Oct 12 update warned it is 'very likely that we take a very hard look at the Eldrazi package' if Eldrazi keeps sitting on top, and named Kozilek's Command as a bridge to Emrakul in Broodscale Combo. The deck is still the most played (Eldrazi Ramp 11.9% on MTGGoldfish, Broodscale Bloodchief 13% on MTGTop8) and swept the Nov 10 Challenge, but Spellslinger shows its share falling and it won none of the last three Regional Championships, so a Nov 30 hit is about a coin flip. If WotC acts, Emrakul or Blade of the Bloodchief is the likelier pick; the Command is a real but secondary target.",
  "sources": [
   {
    "title": "Modern Metagame (last 2 weeks)",
    "source": "MTGTop8",
    "url": "https://www.mtgtop8.com/format?f=MO",
-   "date": "2026-11-10",
-   "takeaway": "606 decks: Broodscale Bloodchief #1 at 13%, Eldrazi Ramp 0.7%; Rakdos Aggro 11%, Amulet Titan 7%."
+   "date": "2026-11-11",
+   "takeaway": "588 decks (last 2 weeks): Broodscale Bloodchief #1 at 13%, Eldrazi Ramp 0.5%."
   },
   {
    "title": "Modern Metagame (full)",
    "source": "MTGGoldfish",
    "url": "https://www.mtggoldfish.com/metagame/modern/full",
+   "date": "2026-11-11",
+   "takeaway": "Eldrazi Ramp #1 at 11.9%; Eldrazi-family decks ~20.0% combined (Eldrazi 3.1%, Eldrazi Tron 2.8%, Broodscale 1.5%+0.2%, Mono-Green Eldrazi 0.5%)."
+  },
+  {
+   "title": "Modern Format Staples",
+   "source": "MTGGoldfish",
+   "url": "https://www.mtggoldfish.com/format-staples/modern/full/all",
+   "date": "2026-11-11",
+   "takeaway": "Kozilek's Command #14 staple, 20% of decks; Emrakul #35 (16%), Sowing Mycospawn #26 (17%), Blade of the Bloodchief #49 (13%)."
+  },
+  {
+   "title": "Legacy Format Staples",
+   "source": "MTGGoldfish",
+   "url": "https://www.mtggoldfish.com/format-staples/legacy/full/all",
+   "date": "2026-11-11",
+   "takeaway": "#40 Legacy staple, ~12% of decks: no Legacy ban pressure."
+  },
+  {
+   "title": "Kozilek's Command",
+   "source": "EDHREC",
+   "url": "https://edhrec.com/cards/kozileks-command",
+   "date": "2026-11-11",
+   "takeaway": "~82K decks, 0.78% inclusion, not a Game Changer: no Commander ban pressure."
+  },
+  {
+   "title": "Modern Challenge 32 (Nov 10)",
+   "source": "MTGTop8",
+   "url": "https://www.mtgtop8.com/event?e=93615&f=MO",
    "date": "2026-11-10",
-   "takeaway": "Eldrazi Ramp #1 at 11.6%; Eldrazi-family decks ~19.6% combined (Eldrazi 3.1%, Eldrazi Tron 2.6%, Broodscale 1.8%)."
+   "takeaway": "Broodscale Bloodchief took 1st, 2nd and 3-4th of a 46-player Challenge; the winning list runs Eldrazi Temple and Emrakul."
   },
   {
    "title": "Eldrazi Ramp (Mono-Green Eldrazi Broodscale)",
@@ -46,25 +74,11 @@
    "takeaway": "Goldfish's Eldrazi Ramp is the Broodscale combo deck: 4 Kozilek's Command, 4 Eldrazi Temple, 4 Mycospawn, ~4 Emrakul in every list."
   },
   {
-   "title": "Modern Format Staples",
-   "source": "MTGGoldfish",
-   "url": "https://www.mtggoldfish.com/format-staples/modern/full/all",
-   "date": "2026-11-10",
-   "takeaway": "Kozilek's Command #14 staple, 20% of decks as a 4-of; Emrakul #35 (16%), Blade of the Bloodchief #48 (13%)."
-  },
-  {
-   "title": "Legacy Format Staples",
-   "source": "MTGGoldfish",
-   "url": "https://www.mtggoldfish.com/format-staples/legacy/full/all",
-   "date": "2026-11-10",
-   "takeaway": "#40 Legacy staple, ~12% of decks: no Legacy ban pressure."
-  },
-  {
-   "title": "Kozilek's Command",
-   "source": "EDHREC",
-   "url": "https://edhrec.com/cards/kozileks-command",
-   "date": "2026-11-10",
-   "takeaway": "~82K decks, 0.78% inclusion, not a Game Changer: no Commander ban pressure."
+   "title": "Unity League Finals - Nationals Germany 2026",
+   "source": "MTGTop8",
+   "url": "https://www.mtgtop8.com/event?e=93550&f=MO",
+   "date": "2026-11-07",
+   "takeaway": "Won by Living End; two Broodscale Bloodchief in the top 8 (3-4th, 5-8th)."
   },
   {
    "title": "Regional Championship - MIT Championship (Taipei)",
@@ -74,32 +88,18 @@
    "takeaway": "Won by Rakdos Delirium; one Broodscale Bloodchief in the top 8 (5-8th)."
   },
   {
-   "title": "Regional Championship - South America",
-   "source": "MTGTop8",
-   "url": "https://www.mtgtop8.com/event?e=92880&f=MO",
-   "date": "2026-10-24",
-   "takeaway": "Won by Boros Energy; Broodscale Bloodchief 2nd and 5-8th."
-  },
-  {
    "title": "Banned and Restricted Announcement - October 12, 2026",
    "source": "Wizards of the Coast",
    "url": "https://magic.wizards.com/en/news/announcements/banned-and-restricted-october-12-2026",
    "date": "2026-10-12",
    "takeaway": "No Modern changes; 'very likely that we take a very hard look at the Eldrazi package'; Command named as a bridge to Emrakul; next B&R Nov 30."
-  },
-  {
-   "title": "September '26 Metagame Update: Broodscale Blitz",
-   "source": "Quiet Speculation",
-   "url": "https://www.quietspeculation.com/2026/10/september-26-metagame-update-broodscale-blitz",
-   "date": "2026-10-08",
-   "takeaway": "'If Broodscale is too good, it's the wrong card to ban'; Emrakul is the better target, a Command ban would kill the other Eldrazi decks."
   }
  ],
  "card": {
   "image": "https://cards.scryfall.io/normal/front/9/2/92585587-cfdc-406a-9114-4f6dd8802c37.jpg?1784634156",
   "scryfall_uri": "https://scryfall.com/card/mh3/11/kozileks-command",
   "prices": {
-   "usd": 7.26,
+   "usd": 7.47,
    "eur": 6.97,
    "tix": 10.24
   },
@@ -119,5 +119,5 @@
   },
   "game_changer": false
  },
- "deployed_at": "2026-11-10T12:36:43+00:00"
+ "deployed_at": "2026-11-11T06:42:19+00:00"
 }
