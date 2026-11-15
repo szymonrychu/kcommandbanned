@@ -62,7 +62,17 @@ small.
      disagree with Goldfish, say so rather than averaging the two blindly.
 
 4. **Discussion (last 7 days).** WebSearch/WebFetch on:
-   - Reddit: r/ModernMagic, r/magicTCG, r/Pauper (not legal there, skip), r/EDH
+   - Reddit (r/ModernMagic, r/magicTCG, r/EDH), read through Arctic Shift, an open Reddit
+     archive (minutes to ~1h behind), with curl, never reddit.com itself:
+     `curl -sS -A "kcommandbanned-research/1.0 (homelab, low volume)" -G https://arctic-shift.photon-reddit.com/api/comments/search --data-urlencode subreddit=ModernMagic --data-urlencode "body=Kozilek's Command" -d after=7d -d sort=desc -d limit=25 -d fields=id,link_id,body,created_utc,score`
+     Posts: same on `/api/posts/search` with `fields=id,title,created_utc,score,num_comments,selftext`;
+     `title=<query>` often fails with 422 "Timeout", so list the sub's last 7 days and filter
+     locally. Queries: "Kozilek's Command", "Broodscale", "Eldrazi ban". At most 1 request
+     per second and ~40 per run; cache each JSON response in the working dir and reuse it;
+     on HTTP 429 wait X-RateLimit-Reset seconds once, then skip Reddit. Cite as
+     `https://www.reddit.com/r/<sub>/comments/<post id>/` (comments: `<link_id without
+     t3_>/_/<id>/`), link only, never fetch it. If Arctic Shift is down, note "Reddit
+     unavailable (Arctic Shift down)" and move on.
    - MTGGoldfish articles and videos (ban predictions)
    - Star City Games, ChannelFireball/TCGplayer Infinite, mtgrocks, Card Kingdom blog
    - Twitter/X and Bluesky posts by pros and WotC staff (search e.g. "Kozilek's Command ban")
@@ -72,9 +82,10 @@ small.
    Keep only items that say something about whether the Command, or the Eldrazi package it
    belongs to, will be hit.
 
-   Known blocks (2026-11-10): reddit.com (WebSearch and WebFetch refuse it, the JSON API
-   returns 403), mtgdecks.net (403) and the Bluesky search API (403) cannot be read. X posts
-   only show up through WebSearch. Note the gap and move on; never try to get around a block.
+   Known blocks (2026-11-10): mtgdecks.net (403) and the Bluesky search API (403) cannot be
+   read. Direct reddit.com stays blocked (WebSearch and WebFetch refuse it, the JSON API
+   returns 403); use Arctic Shift as above and never work around it. X posts only show up
+   through WebSearch. Note the gap and move on; never try to get around a block.
    Naming: MTGGoldfish's "Eldrazi Ramp" is the Broodscale combo deck, which MTGTop8 calls
    "Broodscale Bloodchief" and Spellslinger splits into "mono-green basking broodscale combo"
    and "broodscale bloodchief".
