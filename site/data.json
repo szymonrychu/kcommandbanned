@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21",
+ "updated": "2026-11-22",
  "announcement": {
   "date": "2026-11-30",
   "note": "(Monday; WotC said so in the Oct 12, 2026 announcement)",
@@ -9,12 +9,12 @@
   {
    "format": "Modern",
    "percent": 15,
-   "why": "P(act) ~50%: WotC's Oct 12 'very likely ... very hard look at the Eldrazi package' (~60%), +10 for the Eldrazi family at ~20% on MTGGoldfish (Eldrazi Ramp #1 at 12.0%) and Broodscale Bloodchief #1 on MTGTop8 (12%) and S-tier on Spellslinger (79 top 8s in 30 days, best conversion in the format), -20 for organic correction (Spellslinger: mono-green Broodscale share down from 11.1% to 4.8%, Broodscale Bloodchief tied with Rakdos Delirium at 6.8%; the Nov 19 and Nov 20 Challenges went to Cosmogoyf and Amulet Titan with one Broodscale deck in each top 8; effective archetypes steady near 31; no Modern RC until April 2027, so no season to protect; no new WotC wording as of Nov 21). Goldfish and Spellslinger still disagree on how big the deck is, so this is not averaged. x P(Command picked) ~30%: Basking Broodscale, Blade of the Bloodchief or Emrakul are the narrower enablers and Reddit now calls Broodscale 'the front runner'; the Command is a flexible 4-of in 19% of all Modern decks (#16 staple, also in Tron and Trudge decks), which WotC avoids hitting."
+   "why": "P(act) ~50%: WotC's Oct 12 'very likely ... very hard look at the Eldrazi package' (~60%), +10 for the Eldrazi family at ~19% on MTGGoldfish (Eldrazi Ramp still #1 at 11.8%) and Broodscale Bloodchief #1 on MTGTop8 (12% of 521 decks) and S-tier on Spellslinger (79 top 8s in 30 days, best conversion in the format), -20 for organic correction (Spellslinger: mono-green Broodscale share down from 11.0% to 4.8%, Broodscale Bloodchief 7.0% vs Rakdos Delirium 6.8%; recent Challenges and the Nov 20 League went to other decks, with Broodscale 2nd in that League; effective archetypes ~30; no Modern RC until April 2027, so no season to protect; no new WotC wording as of Nov 22). Goldfish and Spellslinger still disagree on how big the deck is, so this is not averaged. x P(Command picked) ~30%: Basking Broodscale, Blade of the Bloodchief or Emrakul are the narrower enablers and the most upvoted Reddit take is 'just ban broodscale or blade'; the Command is a flexible 4-of in 19% of all Modern decks (#18 staple, also in Tron and Trudge decks), which WotC avoids hitting."
   },
   {
    "format": "Legacy",
    "percent": 3,
-   "why": "#39 Legacy staple in ~12% of decks; WotC called Legacy Eldrazi proactive and fair. No ban pressure."
+   "why": "#38 Legacy staple in 12% of decks; WotC called Legacy Eldrazi proactive and fair. No ban pressure."
   },
   {
    "format": "Vintage / Commander",
@@ -22,35 +22,35 @@
    "why": "Not a Vintage restriction candidate; in Commander it is in 0.78% of EDHREC decks and not on the Game Changers list (Scryfall: 53 Game Changers, Command not among them)."
   }
  ],
- "summary": "WotC's Oct 12 update warned it is 'very likely that we take a very hard look at the Eldrazi package' if Eldrazi keeps sitting on top, and named Kozilek's Command as a bridge to Emrakul in Broodscale Combo. As of Nov 21 there is no new WotC word; the deck is still #1 on MTGGoldfish (Eldrazi Ramp 12.0%) and MTGTop8 (Broodscale Bloodchief 12%), but its share is slipping and every Challenge from Nov 16 to Nov 20 went to another deck, so a Nov 30 hit on the archetype is about a coin flip. If WotC acts, Basking Broodscale, Blade of the Bloodchief or Emrakul is the likelier pick; the Command is a real but secondary target.",
+ "summary": "WotC's Oct 12 update warned it is 'very likely that we take a very hard look at the Eldrazi package' if Eldrazi keeps sitting on top, and named Kozilek's Command as a bridge to Emrakul in Broodscale Combo. As of Nov 22 there is no new WotC word; the deck is still #1 on MTGGoldfish (Eldrazi Ramp 11.8%) and MTGTop8 (Broodscale Bloodchief 12%), but its share keeps slipping and recent events went to other decks, so a Nov 30 hit on the archetype is about a coin flip. If WotC acts, Basking Broodscale, Blade of the Bloodchief or Emrakul is the likelier pick; the Command is a real but secondary target.",
  "sources": [
   {
    "title": "Modern Metagame (last 2 weeks)",
    "source": "MTGTop8",
    "url": "https://www.mtgtop8.com/format?f=MO",
-   "date": "2026-11-21",
-   "takeaway": "580 decks (last 2 weeks): Broodscale Bloodchief #1 at 12%, Rakdos Aggro 9%, UW Control 9%, Affinity 6%."
+   "date": "2026-11-22",
+   "takeaway": "521 decks (last 2 weeks): Broodscale Bloodchief #1 at 12%, Rakdos Aggro 9%, UW Control 9%, Affinity 6%."
   },
   {
    "title": "Modern Metagame (full)",
    "source": "MTGGoldfish",
    "url": "https://www.mtggoldfish.com/metagame/modern/full",
-   "date": "2026-11-21",
-   "takeaway": "Eldrazi Ramp #1 at 12.0% (down from 12.5%); Eldrazi-family decks ~20% combined (Eldrazi Tron 3.6%, Eldrazi 2.5%, Broodscale 1.0%+0.3%, Mono-Green Eldrazi 0.3%)."
+   "date": "2026-11-22",
+   "takeaway": "Eldrazi Ramp #1 at 11.8% (down from 12.0%); Eldrazi-family decks ~19% combined (Eldrazi Tron 3.5%, Eldrazi 2.5%, Broodscale 0.8%+0.2%, Mono-Green Eldrazi 0.3%)."
   },
   {
    "title": "Modern Format Staples",
    "source": "MTGGoldfish",
    "url": "https://www.mtggoldfish.com/format-staples/modern/full/all",
-   "date": "2026-11-21",
-   "takeaway": "Kozilek's Command #16 staple, 19% of decks; Sowing Mycospawn #29 (16%), Emrakul #33 (15%), Blade of the Bloodchief #48 (12%), Basking Broodscale #49 (12%)."
+   "date": "2026-11-22",
+   "takeaway": "Kozilek's Command #18 staple, 19% of decks; Sowing Mycospawn #30 (16%), Emrakul #34 (15%); Blade of the Bloodchief and Basking Broodscale fell out of the top 50."
   },
   {
    "title": "Legacy Format Staples",
    "source": "MTGGoldfish",
    "url": "https://www.mtggoldfish.com/format-staples/legacy/full/all",
-   "date": "2026-11-21",
-   "takeaway": "#39 Legacy staple, ~12% of decks: no Legacy ban pressure."
+   "date": "2026-11-22",
+   "takeaway": "#38 Legacy staple, 12% of decks: no Legacy ban pressure."
   },
   {
    "title": "r/ModernMagic: \"Urza's Saga as a ban candidate\"",
@@ -67,18 +67,18 @@
    "takeaway": "63 players, won by Amulet Titan; one Broodscale Bloodchief in the top 8, at 3-4th."
   },
   {
-   "title": "Modern Challenge 16 (Nov 19)",
+   "title": "MTGO Modern League (Nov 20)",
    "source": "MTGTop8",
-   "url": "https://www.mtgtop8.com/event?e=94075&f=MO",
-   "date": "2026-11-19",
-   "takeaway": "33 players, won by Cosmogoyf; one Broodscale Bloodchief in the top 8, at 5-8th."
+   "url": "https://www.mtgtop8.com/event?e=94104&f=MO",
+   "date": "2026-11-20",
+   "takeaway": "Won by Dimir Control; Broodscale Bloodchief finished 2nd, the only Eldrazi deck in the top 8."
   },
   {
-   "title": "Modern Challenge 32 (Nov 17)",
-   "source": "MTGTop8",
-   "url": "https://www.mtgtop8.com/event?e=94003&f=MO",
-   "date": "2026-11-17",
-   "takeaway": "44 players, won by Boros Aggro; one Broodscale Bloodchief in the top 8, at 5-8th."
+   "title": "r/ModernMagic: \"Urza's Saga as a ban candidate\" (top comment)",
+   "source": "Reddit (via Arctic Shift)",
+   "url": "https://www.reddit.com/r/ModernMagic/comments/1y1gliu/_/19sxwwwarwfkw/",
+   "date": "2026-11-20",
+   "takeaway": "Most upvoted take (+22): 'just ban broodscale or blade and be done with it' rather than weakening many decks."
   },
   {
    "title": "Kozilek's Command",
@@ -119,5 +119,5 @@
   },
   "game_changer": false
  },
- "deployed_at": "2026-11-21T11:05:32+00:00"
+ "deployed_at": "2026-11-22T05:03:44+00:00"
 }
