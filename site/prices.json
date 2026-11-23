@@ -696,6 +696,13 @@
    "eur": 7.17,
    "tix": 10.4,
    "source": "scryfall"
+  },
+  {
+   "date": "2026-11-23",
+   "usd": 6.84,
+   "eur": 7.08,
+   "tix": 11.59,
+   "source": "scryfall"
   }
  ]
 }
